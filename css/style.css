@@ -120,6 +120,11 @@ body {
     left: 0;
   }
 }
+@media screen and (max-width: 480px) {
+  .navbar {
+    height: 60px;
+  }
+}
 
 /* Hero */
 
@@ -187,13 +192,21 @@ body {
   height: 402px;
 }
 @media (max-width:768px) {
+  .hero {
+    display: flex;
+  }
  .info-container {
-  margin: 0 0 0 60px;
+  margin: 0 40px 0 40px;
 
   }
  .image-computer img {
   display: none;
  }
+}
+@media screen and (max-width: 480px) {
+  .info-container h1 {
+    font-size: 28px;
+  }
 }
 @keyframes cambiar{
   0%{background-position: 0 50%;}
@@ -341,6 +354,11 @@ body {
   }
 
 }
+@media screen and (max-width: 480px) {
+  .card-btn {
+    margin-top: 4px;
+  }
+}
 /* Proyectos */
 .proyects {
   width: 100vw;
@@ -413,12 +431,16 @@ body {
     justify-content: center;
     max-width: 480px;
     margin: 36px auto;
-    width: 75%;
-
   }
   .card-proyects {
     width: 480px;
   }
+}
+@media screen and (max-width: 480px) {
+  .card-proyects {
+    width: 380px;
+  }
+ 
 }
 /* Tecnologias */
 .tecnologi {
