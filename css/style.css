@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
   --texto: #fff;
@@ -281,7 +284,7 @@ body {
 /* Servicios */
 .services {
   width: 100vw;
-  padding: 128px;
+  padding: 60px 128px;
   height: 800px;
   background-color: var(--fondo-gris-oscuro);
 }
@@ -483,7 +486,7 @@ body {
 /* Proyectos */
 .proyects {
   width: 100vw;
-  padding: 128px;
+  padding: 60px 128px;
   height: 900px;
   background-color: var(--fondo-gris-claro);
 }
