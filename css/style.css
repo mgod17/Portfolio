@@ -811,6 +811,7 @@ body {
 }
 
 .contact-box {
+  color: var(--texto);
   width: 278px;
   height: 64px;
   background-color: var(--fondo-gris-oscuro);
@@ -823,6 +824,7 @@ body {
 }
 
 .contact-box-message {
+  color: var(--texto);
   height: 128px;
   background-color: var(--fondo-gris-oscuro);
   cursor: text;

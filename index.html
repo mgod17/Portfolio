@@ -43,11 +43,11 @@
                             < </span> MarianoGodoy <span>/></span></h2>
                 </div>
                 <ul class="menu nav-menu">
-                    <li class="nav-item"><a href="#servicios" onclick="seleccionar()" class="nav-link">servicios</a></li>
-                    <li class="nav-item"><a href="#proyectos" onclick="seleccionar()"  class="nav-link">proyectos</a></li>
-                    <li class="nav-item"><a href="#tecnologias" onclick="seleccionar()"  class="nav-link">tecnologias</a></li>
-                    <li class="nav-item"><a href="#contactos" onclick="seleccionar()" class="nav-link">contacto</a></li>
-                    <li class="nav-item"><a href="#resumen" onclick="seleccionar()"  class="nav-link">resumen</a></li>
+                    <li class="nav-item"><a href="#servicios" class="nav-link link1" >servicios</a></li>
+                    <li class="nav-item"><a href="#proyectos"   class="nav-link link2" >proyectos</a></li>
+                    <li class="nav-item"><a href="#tecnologias"   class="nav-link link3" >tecnologias</a></li>
+                    <li class="nav-item"><a href="#contactos" class="nav-link link4" >contacto</a></li>
+                    <li class="nav-item"><a href="#resumen"   class="nav-link" >resumen</a></li>
                 </ul>
                 <div class="burger-menu">
                     <span class="bar"></span>
@@ -65,23 +65,11 @@
                 <span>Front-End Developer</span>
                 <p>Desde Argentina, activamente enfocado al diseño y maquetacion front-end. Busco aprender cosas nuevas
                     constantemente, valoro la simplificidad y la eficiencia</p>
-                <a class="btn-contact" href="Contacto"> Empecemos!</a>
+                <a class="btn-contact" href="#contactos"> Empecemos!</a>
                 <ul class="hero__social">
-                    <!-- FACEBOOK ICON -->
-                    <li>
-                        <a href="#" target="_blank" rel="noreferrer noopener external"
-                            class="social__content--icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                width="32" height="32">
-                                <path fill="none" d="M0 0h24v24H0z" />
-                                <path class="social--svg"
-                                    d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10z" />
-                            </svg>
-                        </a>
-                    </li>
-
                     <!-- TWIITER ICON -->
                     <li>
-                        <a href="#" target="_blank" rel="noreferrer noopener external"
+                        <a href="#https://twitter.com/marianogodoy777" target="_blank" rel="noreferrer noopener external"
                             class="social__content--icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                 width="32" height="32">
                                 <path fill="none" d="M0 0h24v24H0z" />
@@ -150,7 +138,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path fill="none" d="M0 0h24v24H0z"/><path class="services__title--svg" d="M15 4H5v16h14V8h-4V4zM3 2.992C3 2.444 3.447 2 3.999 2H16l5 5v13.993A1 1 0 0 1 20.007 22H3.993A1 1 0 0 1 3 21.008V2.992zM17.657 12l-3.536 3.536-1.414-1.415L14.828 12l-2.12-2.121 1.413-1.415L17.657 12zM6.343 12L9.88 8.464l1.414 1.415L9.172 12l2.12 2.121-1.413 1.415L6.343 12z"/></svg>
                         </div>
                         <p>Encargado de traducir las definiciones y estilo visual realizadas previamente.</p>
-                        <a class="card-btn" href="">proyectos</a>
+                        <a class="card-btn" href="#proyectos">proyectos</a>
                     </div>
                     <div class="services-card">
                         <div class="card-title">
@@ -158,7 +146,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path fill="none" d="M0 0h24v24H0z"/><path class="services__title--svg" d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm17 8H4v8h16v-8zm0-2V5H4v4h16zM9 6h2v2H9V6zM5 6h2v2H5V6z"/></svg>
                         </div>
                         <p>Diseño de paginas web, portfolio, ecommerce, dashboard y mucho mas.</p>
-                        <a class="card-btn" href="">Proyectos</a>
+                        <a class="card-btn" href="#proyectos">Proyectos</a>
                     </div>
                 </div>
                 <div class="about-me">
@@ -269,7 +257,7 @@
                     <div class="contact-title">
                     <h3>CONTACTO</h3>
                     </div>
-                    <form id="form" class="form">
+                    <form id="form" class="form" action="https://formsubmit.co/marianogodoyg@gmail.com" method="POST">
                         <div class="form-grid">
                             <div>
                             <input type="text" class="contact-box name" name="name" id="name" autocomplete="off" placeholder="Nombre completo" title="Tu nombre es obligatorio." required>
