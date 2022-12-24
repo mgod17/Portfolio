@@ -575,7 +575,9 @@ body {
     max-width: 480px;
     margin: 36px auto;
   }
-
+  .conteiner-card{
+    width: 460px;
+  }
   .card-proyects {
     width: 460px;
   }
