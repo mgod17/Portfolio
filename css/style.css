@@ -587,14 +587,10 @@ body {
   .conteiner-card {
     display: flex;
     justify-content: center;
+    width: 100%;
   }
   .title-proyects-conteiner h2 {
     font-size: 40px;
-  }
-
-  .card-proyects {
-    width: 270px;
-    margin-left: 20px;
   }
 }
 
