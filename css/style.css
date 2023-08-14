@@ -661,6 +661,9 @@ body {
   .title-proyects-conteiner h2 {
     font-size: 40px;
   }
+  .card-proyects {
+    width: auto;
+  }
 }
 
 /* Tecnologias */
