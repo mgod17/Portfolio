@@ -15,11 +15,10 @@ html {
   --fondo-gris-oscuro: #202022;
   --fondo-gris-home: #353537;
   --fondo-gris-claro: #28282b;
-
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   overflow-x: hidden;
   color: var(--texto);
 }
@@ -28,7 +27,14 @@ body {
 .wrapper {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(45deg, #171717, #202022, #414141, #171717, #030304);
+  background: linear-gradient(
+    45deg,
+    #171717,
+    #202022,
+    #414141,
+    #171717,
+    #030304
+  );
   background-size: 400% 400%;
   position: relative;
   animation: cambiar 7s ease-in-out infinite;
@@ -48,7 +54,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 60
+  gap: 60;
 }
 
 .burger-menu {
@@ -86,9 +92,9 @@ body {
 .menu a:hover {
   color: var(--texto-verde);
   font-size: 20px;
-  transition: .3s;
+  transition: 0.3s;
 }
-@media (max-width:920px) {
+@media (max-width: 920px) {
   .brand h2 {
     font-size: 19px;
   }
@@ -96,7 +102,7 @@ body {
     font-size: 15px;
   }
 }
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .navbar {
     width: 100vw;
     height: 80px;
@@ -117,12 +123,10 @@ body {
 
   .burger-menu.active .bar:nth-child(2) {
     opacity: 0;
-
   }
 
   .burger-menu.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
-
   }
 
   .burger-menu.active .bar:nth-child(3) {
@@ -195,13 +199,13 @@ body {
   width: 224px;
   height: 64px;
   border-radius: 8px;
-  background-color: #64F4AC;
+  background-color: #64f4ac;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 24px;
   font-weight: 700;
-  color: #2D2E32;
+  color: #2d2e32;
   text-decoration: none;
   margin-top: 32px;
 }
@@ -225,14 +229,14 @@ body {
 }
 
 .hero__social li:hover .social--svg {
-  fill: #64F4AC;
-  transition: all .3s ease-in-out;
+  fill: #64f4ac;
+  transition: all 0.3s ease-in-out;
 }
 
 .social--svg {
   fill: #656568;
   cursor: pointer;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .image-computer img {
@@ -240,7 +244,7 @@ body {
   min-width: 350px;
   height: 402px;
 }
-@media (max-width:1160px) {
+@media (max-width: 1160px) {
   .hero {
     margin: 0 30px;
     max-width: 980px;
@@ -251,16 +255,15 @@ body {
   .image-computer img {
     max-width: 500px;
     max-height: 320px;
+  }
 }
-}
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .hero {
     display: flex;
   }
 
   .info-container {
     margin: 0 40px 0 40px;
-
   }
 
   .image-computer img {
@@ -332,7 +335,7 @@ body {
 .services-card {
   height: 243px;
   border-radius: 8px;
-  background-color: #28282B;
+  background-color: #28282b;
   padding: 32px;
   margin-bottom: 16px;
   display: flex;
@@ -360,7 +363,6 @@ body {
   font-weight: 400;
   color: var(--texto-gris);
   margin-top: 8px;
-
 }
 
 .card-btn {
@@ -370,7 +372,7 @@ body {
   color: #656568;
   text-decoration: underline;
   margin-top: 32px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .card-title {
@@ -415,15 +417,15 @@ body {
   margin-top: 32px;
   color: var(--texto-verde);
 }
-@media (max-width:1180px) {
+@media (max-width: 1180px) {
   .grapper-services {
     grid-template-columns: 44% 56%;
   }
   .card-title h3 {
     font-size: 28px;
-  } 
-  .services-card p{
-  font-size: 16px;
+  }
+  .services-card p {
+    font-size: 16px;
   }
   .about-me-text {
     font-size: 16px;
@@ -432,12 +434,12 @@ body {
     font-size: 16px;
   }
 }
-@media (max-width:920px) {
+@media (max-width: 920px) {
   .card-title h3 {
     font-size: 24px;
-  } 
-  .services-card p{
-  font-size: 14px;
+  }
+  .services-card p {
+    font-size: 14px;
   }
   .about-me-text {
     font-size: 14px;
@@ -449,12 +451,12 @@ body {
     margin-top: 22px;
   }
 }
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .card-title h3 {
     font-size: 28px;
-  } 
-  .services-card p{
-  font-size: 16px;
+  }
+  .services-card p {
+    font-size: 16px;
   }
   .about-me-text {
     font-size: 16px;
@@ -499,9 +501,7 @@ body {
     flex-direction: column;
     justify-content: center;
   }
-
 }
-
 
 @media screen and (max-width: 480px) {
   .title-services-conteiner h2 {
@@ -555,14 +555,32 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 48px;
-
 }
-
+.conteiner-card h3 {
+  text-align: center;
+  font-size: 30px;
+  color: var(--texto-gris-claro);
+  margin-bottom: 20px;
+}
 .proyects-content {
   width: 100%;
   height: 502px;
   max-width: 572px;
   margin-top: 32px;
+}
+.github-button {
+  position: relative;
+  top: 420px;
+  background-color: var(--texto-verde);
+  color: black;
+  font-weight: bolder;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.github-button:hover {
+  background-color: #08e275;
 }
 
 .card-proyects {
@@ -576,22 +594,33 @@ body {
 }
 
 .card-proyects1 {
-  background-image: url('../assets/card1.png');
+  background-image: url("../assets/broken-office1.png");
   object-fit: cover;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-@media (max-width:1180px) {
+.card-proyects2 {
+  background-image: url("../assets/bronken.png");
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1180px) {
   .proyects {
     height: 750px;
   }
   .card-proyects {
     height: 320px;
   }
+  .github-button {
+    top: 220px;
+  }
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .cursor-container img {
     display: none;
   }
@@ -613,8 +642,10 @@ body {
     max-width: 480px;
     margin: 36px auto;
   }
-  .conteiner-card{
+  .conteiner-card {
     width: 460px;
+    display: flex;
+    flex-direction: column;
   }
   .card-proyects {
     width: 460px;
@@ -640,7 +671,7 @@ body {
 }
 
 .cubo-container {
-  top: 250%;
+  top: 350%;
   right: 4%;
   position: absolute;
 }
@@ -665,7 +696,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 48px;
-
 }
 
 .tecnologi-grapper-down {
@@ -675,7 +705,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 48px;
-
 }
 
 .tecnologi-icon--hidden {
@@ -702,16 +731,16 @@ body {
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-iteration-count: 1;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 
 .tecnologi--svg {
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 
 .tecnologi-icon:hover p {
-  color: #64F4AC;
-  transition: all .2s ease;
+  color: #64f4ac;
+  transition: all 0.2s ease;
 }
 
 .tecnologi-icon:hover svg {
@@ -719,11 +748,11 @@ body {
 }
 
 .tecnologi-icon:hover .tecnologi--svg {
-  fill: #64F4AC;
-  transition: all .2s ease;
+  fill: #64f4ac;
+  transition: all 0.2s ease;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .cubo-container img {
     display: none;
   }
@@ -780,7 +809,7 @@ body {
 
   to {
     transform: scale3d(1, 1, 1);
-    transition: all .2s ease;
+    transition: all 0.2s ease;
   }
 }
 
@@ -879,7 +908,7 @@ body {
   width: 200px;
   height: 64px;
   border-radius: 8px;
-  background-color: #64F4AC;
+  background-color: #64f4ac;
   margin-top: 16px;
   font-weight: 800;
   cursor: pointer;
@@ -887,32 +916,30 @@ body {
   font-size: 18px;
   color: var(--fondo-gris-oscuro);
 }
-@media (max-width:1180px) {
+@media (max-width: 1180px) {
   .contact-grid {
     margin: 0 20px 0 20px;
     grid-template-columns: 42% 48%;
-    gap: 16px; }
+    gap: 16px;
+  }
   .contact-info h3 {
-      font-size: 26px;
-    }
-    .form-grid {
-      grid-template-columns: 50% 50%;
-      
-    }
-    .contact-box {
-      width: 100%;
+    font-size: 26px;
+  }
+  .form-grid {
+    grid-template-columns: 50% 50%;
+  }
+  .contact-box {
+    width: 100%;
   }
   .contact-box-message {
     width: 206%;
-
   }
   .personal-contact p {
     font-size: 14px;
   }
 }
 
-
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .contact {
     height: auto;
     padding-top: 120px;
@@ -927,13 +954,12 @@ body {
     display: flex;
     justify-content: center;
   }
-  
+
   .contact-grid {
     display: flex;
     flex-direction: column;
     width: 480px;
   }
-
 
   .contact-info {
     width: 100%;
@@ -976,7 +1002,6 @@ body {
 
   .contact-box-message {
     width: 470px;
-
   }
   .container-btn-send {
     display: flex;
@@ -984,30 +1009,28 @@ body {
   }
 }
 
-@media (max-width:480px) {
+@media (max-width: 480px) {
   .contact {
     display: flex;
     justify-content: center;
   }
- 
+
   .personal-contact {
     flex-direction: column;
   }
   .form {
     width: 100%;
   }
-  .form-grid{
+  .form-grid {
     display: flex;
     justify-content: center;
   }
   .contact-box {
     width: 100%;
-    
   }
 
   .contact-box-message {
     width: 100%;
-
   }
   .container-btn-send {
     display: flex;
