@@ -1,6 +1,7 @@
 const burgerMenu = document.querySelector(".burger-menu");
 const navMenu = document.querySelector(".nav-menu");
 const menuLinks = document.querySelectorAll(".nav-link");
+const projectsContainer = document.querySelector(".proyects-grapper");
 
 function toggleMenu() {
   burgerMenu.classList.toggle("active");
