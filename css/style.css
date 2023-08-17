@@ -548,33 +548,107 @@ body {
   font-weight: 700;
 }
 
-.proyects-grapper {
-  max-width: 1160px;
-  width: 100%;
-  margin: 36px auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
+.game-section {
+  margin-top: 40px;
+  padding: 60px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--fondo-gris-claro);
 }
-.conteiner-card h3 {
-  text-align: center;
-  font-size: 30px;
-  color: var(--texto-gris-claro);
-  margin-bottom: 20px;
-}
-.proyects-content {
+
+.custom-carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
   width: 100%;
-  height: 502px;
-  max-width: 572px;
-  margin-top: 32px;
+}
+
+.owl-stage {
+  margin: 15px 0;
+  display: flex;
+}
+
+.item {
+  margin: 0 15px 60px;
+  min-width: 320px;
+  height: 400px;
+  display: flex;
+  align-items: flex-end;
+  background: #343434 no-repeat center center / cover;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.item.active {
+  width: 500px;
+  box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+}
+.item1 {
+  background-image: url("../assets/bronken.png");
+}
+.item2 {
+  background-image: url("../assets/broken-office1.png");
+}
+.item3 {
+  background-image: url("../assets/TodosApp.png");
+}
+.item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+.item-desc {
+  padding: 0 24px 12px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transform: translateY(calc(100% - 54px));
+  transition: all 0.4s ease-in-out;
+}
+
+.item.active .item-desc {
+  transform: none;
+}
+
+.item-desc p {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: all 0.4s ease-in-out 0.2s;
+}
+
+.item.active .item-desc p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.owl-theme.custom-carousel .owl-dots {
+  margin-top: -20px;
+  position: relative;
+  z-index: 5;
+}
+.container-button-card-project {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
 }
 .github-button {
-  position: relative;
-  top: 420px;
   background-color: var(--texto-verde);
   color: black;
   font-weight: bolder;
-  padding: 8px 16px;
+  padding: 4px 8px;
   border-radius: 4px;
   text-decoration: none;
 }
@@ -582,87 +656,68 @@ body {
 .github-button:hover {
   background-color: #08e275;
 }
-
-.card-proyects {
-  height: 520px;
-  border-radius: 8px;
-  background-color: #fff;
-  padding: 32px;
-  margin-bottom: 16px;
-  display: flex;
-  flex-direction: column;
-}
-
-.card-proyects1 {
-  background-image: url("../assets/broken-office1.png");
-  object-fit: cover;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.card-proyects2 {
-  background-image: url("../assets/bronken.png");
-  object-fit: cover;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-@media (max-width: 1180px) {
-  .proyects {
-    height: 750px;
+/* Estilos responsivos */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .game-section {
+    margin: 0;
+    padding: 0;
   }
-  .card-proyects {
-    height: 320px;
+  .custom-carousel {
+    overflow-x: auto;
+    scroll-behavior: auto;
   }
-  .github-button {
-    top: 220px;
+  .item {
+    margin: 0 12px 60px;
+    /* width: 260px;
+    height: 360px; */
+  }
+
+  /* .item.active {
+    width: 400px;
+  } */
+
+  .item-desc {
+    transform: translateY(calc(100% - 46px));
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .cursor-container img {
     display: none;
   }
 
-  .proyects {
-    padding: 40px;
-    height: auto;
+  .game-section {
+    margin: 0;
+    padding: 0;
+  }
+  .item {
+    margin: 0 12px 60px;
   }
 
-  .title-proyects-conteiner h2 {
-    font-size: 50px;
-    font-weight: 700;
-  }
-
-  .proyects-grapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 480px;
-    margin: 36px auto;
-  }
-  .conteiner-card {
-    width: 460px;
-    display: flex;
-    flex-direction: column;
-  }
-  .card-proyects {
-    width: 460px;
+  .item-desc {
+    transform: translateY(calc(100% - 42px));
   }
 }
 
-@media screen and (max-width: 480px) {
-  .conteiner-card {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+@media (max-width: 767px) {
+  .game-section {
+    padding: 30px 15px 20px;
   }
-  .title-proyects-conteiner h2 {
-    font-size: 40px;
+
+  .game-section .item {
+    margin: 0 10px 40px;
+    width: 200px;
+    height: 280px;
   }
-  .card-proyects {
-    width: auto;
+
+  .game-section .item.active {
+    width: 270px;
+    box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  .game-section .item-desc {
+    padding: 0 14px 5px;
+    transform: translateY(calc(100% - 42px));
   }
 }
 
