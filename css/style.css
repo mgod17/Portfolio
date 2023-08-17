@@ -563,16 +563,17 @@ body {
   flex-wrap: nowrap;
   overflow-x: auto;
   scroll-behavior: smooth;
+  width: 100%;
 }
 
-.game-section .owl-stage {
+.owl-stage {
   margin: 15px 0;
   display: flex;
 }
 
-.game-section .item {
+.item {
   margin: 0 15px 60px;
-  width: 320px;
+  min-width: 320px;
   height: 400px;
   display: flex;
   align-items: flex-end;
@@ -584,12 +585,20 @@ body {
   cursor: pointer;
 }
 
-.game-section .item.active {
+.item.active {
   width: 500px;
   box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
 }
-
-.game-section .item:after {
+.item1 {
+  background-image: url("../assets/bronken.png");
+}
+.item2 {
+  background-image: url("../assets/broken-office1.png");
+}
+.item3 {
+  background-image: url("../assets/TodosApp.png");
+}
+.item:after {
   content: "";
   display: block;
   position: absolute;
@@ -600,7 +609,7 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
 }
 
-.game-section .item-desc {
+.item-desc {
   padding: 0 24px 12px;
   color: #fff;
   position: relative;
@@ -610,102 +619,87 @@ body {
   transition: all 0.4s ease-in-out;
 }
 
-.game-section .item.active .item-desc {
+.item.active .item-desc {
   transform: none;
 }
 
-.game-section .item-desc p {
+.item-desc p {
   opacity: 0;
   transform: translateY(32px);
   transition: all 0.4s ease-in-out 0.2s;
 }
 
-.game-section .item.active .item-desc p {
+.item.active .item-desc p {
   opacity: 1;
   transform: translateY(0);
 }
 
-.game-section .owl-theme.custom-carousel .owl-dots {
+.owl-theme.custom-carousel .owl-dots {
   margin-top: -20px;
   position: relative;
   z-index: 5;
 }
+.container-button-card-project {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.github-button {
+  background-color: var(--texto-verde);
+  color: black;
+  font-weight: bolder;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-decoration: none;
+}
 
+.github-button:hover {
+  background-color: #08e275;
+}
 /* Estilos responsivos */
 @media (min-width: 992px) and (max-width: 1199px) {
-  h2,
-  h3 {
-    margin-bottom: 32px;
-    font-size: 24px;
-    line-height: 32px;
-  }
-
   .game-section {
-    padding: 50px 30px;
+    margin: 0;
+    padding: 0;
   }
-
-  .game-section .item {
+  .custom-carousel {
+    overflow-x: auto;
+    scroll-behavior: auto;
+  }
+  .item {
     margin: 0 12px 60px;
-    width: 260px;
-    height: 360px;
+    /* width: 260px;
+    height: 360px; */
   }
 
-  .game-section .item.active {
+  /* .item.active {
     width: 400px;
-  }
+  } */
 
-  .game-section .item-desc {
+  .item-desc {
     transform: translateY(calc(100% - 46px));
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  h2,
-  h3 {
-    margin-bottom: 32px;
-    font-size: 24px;
-    line-height: 32px;
-  }
-
-  .line-title {
-    width: 330px;
+  .cursor-container img {
+    display: none;
   }
 
   .game-section {
-    padding: 50px 30px 40px;
+    margin: 0;
+    padding: 0;
   }
-
-  .game-section .item {
+  .item {
     margin: 0 12px 60px;
-    width: 240px;
-    height: 330px;
   }
 
-  .game-section .item.active {
-    width: 360px;
-  }
-
-  .game-section .item-desc {
+  .item-desc {
     transform: translateY(calc(100% - 42px));
   }
 }
 
 @media (max-width: 767px) {
-  body {
-    font-size: 14px;
-  }
-
-  h2,
-  h3 {
-    margin-bottom: 20px;
-    font-size: 19px;
-    line-height: 24px;
-  }
-
-  .line-title {
-    width: 250px;
-  }
-
   .game-section {
     padding: 30px 15px 20px;
   }
